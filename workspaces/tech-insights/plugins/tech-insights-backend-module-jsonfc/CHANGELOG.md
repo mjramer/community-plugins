@@ -1,5 +1,23 @@
 # @backstage-community/plugin-tech-insights-backend-module-jsonfc
 
+## 0.3.2
+
+### Patch Changes
+
+- 353f022: Fixes an issue where optional links were not included when loading checks from app config
+- c107e0f: Deprecates `TechInsightCheck` from the `tech-insights-node` library in favor of `Check` coming from the `tech-insights-common` library.
+
+  With this change comes a refactor of `Check` from a type to an interface.
+
+  The `TechInsightCheck` interface will be removed from the `tech-insights-node` plugin in it's next major release.
+
+  Importing `Check` from `@backstage-community/plugin-tech-insights-common/client` has been deprecated in favor of importing directly from `@backstage-community/plugin-tech-insights-common`.
+
+- Updated dependencies [f015469]
+- Updated dependencies [c107e0f]
+  - @backstage-community/plugin-tech-insights-common@0.4.1
+  - @backstage-community/plugin-tech-insights-node@2.2.1
+
 ## 0.3.1
 
 ### Patch Changes
